@@ -1,0 +1,4 @@
+CODE2MACHINE
+B = open('example/TAPE', 'r').read()
+A = code2machine(escape(B))
+open('example/TAPE', 'w').write(A+B)
