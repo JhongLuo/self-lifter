@@ -1,5 +1,5 @@
 Pw = """
-open('example/TAPE', 'w').write(\"\"\"OUT_CODE\"\"\")
+B = \"\"\"OUT_CODE\"\"\"
 """
 
 def escape(s):

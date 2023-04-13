@@ -1,7 +1,7 @@
 
-open('example/TAPE', 'w').write("""print(\"hello world, I am excited to be a self lifter!\")
+B = """print(\"hello world, I am excited to be a self lifter!\")
 Pw = \"\"\"
-open('example/TAPE', 'w').write(\\\"\\\"\\\"OUT_CODE\\\"\\\"\\\")
+B = \\\"\\\"\\\"OUT_CODE\\\"\\\"\\\"
 \"\"\"
 
 def escape(s):
@@ -14,12 +14,11 @@ def code2machine(w):
     Pw = Pw.replace(\"OUT_CODE\", w)
     return Pw
 
-B = open('example/TAPE', 'r').read()
 A = code2machine(escape(B))
-open('example/TAPE', 'w').write(A+B)""")
+open('example/TAPE', 'w').write(A+B)"""
 print("hello world, I am excited to be a self lifter!")
 Pw = """
-open('example/TAPE', 'w').write(\"\"\"OUT_CODE\"\"\")
+B = \"\"\"OUT_CODE\"\"\"
 """
 
 def escape(s):
@@ -32,6 +31,5 @@ def code2machine(w):
     Pw = Pw.replace("OUT_CODE", w)
     return Pw
 
-B = open('example/TAPE', 'r').read()
 A = code2machine(escape(B))
 open('example/TAPE', 'w').write(A+B)

@@ -1,10 +1,11 @@
+# the function does the transformation work
 def build(code):
     tail = open('helpers/TAIL', 'r').read()
     tail = tail.replace("CODE2MACHINE\n", open('helpers/code2machine.py', 'r').read())
     B = code
     B += tail
-    import helpers.code2machine as code2machine
-    A = code2machine.code2machine(code2machine.escape(B))
+    from helpers.code2machine import code2machine, escape
+    A = code2machine(escape(B))
     return A + B
 
 
