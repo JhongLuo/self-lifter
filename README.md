@@ -1,7 +1,7 @@
 # self-lifter
 A program that transforms user-provided scripts into new scripts that can output their own source code.
 
-Three facts can be used to demonstrate Gödel's first incompleteness theorem. First, there exists a program that can obtain its own code. Second, a Turing machine can be encoded into a first-order logic sentence. Third, there is an algorithm to search for proofs of first-order logic sentences (proofs are recognizable). This repository is a small demonstration of the first fact.
+Three facts can be used to demonstrate Gödel's first incompleteness theorem. First, programs can obtain its own code (without external assistance). Second, a Turing machine can be encoded into a first-order logic sentence. Third, there is an algorithm to search for proofs of first-order logic sentences (proofs are recognizable). This repository is a small demonstration of the first fact.
 
 > We consider a paradox that arises in the study of life. It concerns the possibility of making machines that can construct replicas of themselves. The paradox can be summarized in the following manner.
 >
